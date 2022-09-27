@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>AMS Caculator</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-      <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <title>AMS Caculator</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <main class="mt-5">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="main">
       <form action="" class="calculatorform" name="calculatorform">
-        <div class="screen text-center">
-          <input type="text" name="screen" readonly class="px-5"/>
+        <div class="">
+          <input type="text" class="display" name="screen" />
         </div>
-        <div class="btn">
-          <input type="button" class="clearbtn" name="clear" value="Clear" onclick="Clear();" />
+        <div class="clearbutton">
+          <input type="button" class="clearbtn" name="clear" value="clear" onclick="Clear();" />
         </div>
-        <div class="btn">
+        <div class="columns">
           <input type="button" class="numbers" name="num1" value="1" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num2" value="2" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num3" value="3" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="plus" value="+" onclick="valueButton(this);" />
         </div>
-        <div class="btn">
+        <div class="columns">
           <input type="button" class="numbers" name="num4" value="4" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num5" value="5" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num6" value="6" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="sub" value="-" onclick="valueButton(this);" />
         </div>
-        <div class="btn">
+        <div class="columns">
           <input type="button" class="numbers" name="num7" value="7" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num8" value="8" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="num9" value="9" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="mul" value="*" onclick="valueButton(this);" />
         </div>
-        <div class="btn">
+        <div class="columns">
           <input type="button" class="numbers" name="num0" value="0" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="div" value="/" onclick="valueButton(this);" />
           <input type="button" class="numbers" name="equal" value="=" onclick="Calculate(this);" />
         </div>
       </form>
-    </main>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    ></script>
-    <!-- my script  -->
-    <script src="script.js"></script>
+    </div>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- my script  -->
+  <script src="script.js"></script>
 </body>
+
 </html>
